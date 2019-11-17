@@ -30,8 +30,8 @@ def receving (name, sock):
 			pass
 host = socket.gethostbyname(socket.gethostname())
 port = 0
-
-server = ("134.208.45.29",9090)
+#its my local host, to test it in differen machine have to write local machine server host
+server = ("134.208.240.195",9090) #here have to write local host
 
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 s.bind((host,port))
@@ -59,7 +59,7 @@ while shutdown == False:
 
 			if message != "":
 				s.sendto(("["+alias + "] :: "+message).encode("utf-8"),server)
-			
+
 			time.sleep(0.2)
 		except:
 			s.sendto(("["+alias + "] <= left chat ").encode("utf-8"),server)

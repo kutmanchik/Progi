@@ -1,0 +1,6 @@
+send 126543 helloo!!!?
+send 124645 howwasyourtoday?
+send kuu.life@gmail.com success!!!
+send kuu.life@gmail.com KutmanAmangeldiev!
+receive kuu.life@gmail.com
+receive 124645

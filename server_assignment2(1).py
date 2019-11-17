@@ -2,7 +2,7 @@ import socket, time
 
 host = socket.gethostbyname(socket.gethostname())
 port = 9090
-
+print(host)
 clients = []
 
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
@@ -26,8 +26,8 @@ while not quit:
 		for client in clients:
 			if addr != client:
 				s.sendto(data,client)
-	except:	
+	except:
 		print("\n[ Server Stopped ]")
 		quit = True
-		
+
 s.close()
